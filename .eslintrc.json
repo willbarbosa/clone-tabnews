@@ -1,7 +1,6 @@
 {
   "extends": [
     "eslint:recommended",
-    "next/babel",
     "next/core-web-vitals",
     "plugin:jest/recommended",
     "prettier"
