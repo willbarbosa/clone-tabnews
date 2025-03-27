@@ -10,7 +10,7 @@ const defaultMigrationOptions = {
   migrationsTable: "pgmigrations",
 };
 
-async function listPendindMigrations() {
+async function listPendingMigrations() {
   let dbClient;
 
   try {
@@ -27,7 +27,7 @@ async function listPendindMigrations() {
   }
 }
 
-async function runPendindMigrations() {
+async function runPendingMigrations() {
   let dbClient;
 
   try {
@@ -46,8 +46,8 @@ async function runPendindMigrations() {
 }
 
 const migrator = {
-  listPendindMigrations,
-  runPendindMigrations,
+  listPendingMigrations,
+  runPendingMigrations,
 };
 
 export default migrator;
