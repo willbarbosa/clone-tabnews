@@ -1,6 +1,6 @@
 import database from "infra/database.js";
 import retry from "async-retry";
-import migrator from "model/migrator.js";
+import migrator from "models/migrator.js";
 
 async function waitForAllServices() {
   await waitForWebServer();
